@@ -1,6 +1,7 @@
 # un-di
 
-AI workspace for Gevorg Aram Grigoryan (`dob_`).
+AI workspace for Gevorg Aram Grigoryan (`dob_`).  
+https://github.com/dob-0/un-di
 
 Three purposes:
 1. **Knowledge base** — docs any AI reads to understand the context, projects, and working style
