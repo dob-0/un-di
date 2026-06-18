@@ -8,7 +8,10 @@ Start here. Every AI reads this first, every session, no exceptions.
 
 **Gevorg Aram Grigoryan** (`dob_`) — artist and director who codes. Background in theater direction, multimedia art, electronic art since 2012. Not a traditional software engineer — programming is a tool for artistic and technical vision. Based in Armenia. Languages: Armenian, English, Russian, Dutch.
 
-Full profile: `docs/context/me.md`
+Full profile: `docs/context/me.md`  
+Network of collaborators and institutions: `docs/context/network.md`  
+Tools used in the practice: `docs/context/tools.md`  
+Active and past projects: `docs/context/projects.md`
 
 ---
 
@@ -60,9 +63,9 @@ Read `docs/claude/new-project.md`. Templates live in `templates/`.
 
 ```
 docs/
-  context/        me.md, di-iiii.md
+  context/        me.md, di-iiii.md, tools.md, network.md, projects.md
   claude/         stack.md, hooks.md, new-project.md
-  ai-research/    ai-workflow-2026.md
+  ai-research/    ai-workflow-2026.md, models.md
 
 templates/
   project-settings.json
