@@ -116,3 +116,37 @@ bash -c 'FILE="${CLAUDE_TOOL_INPUT_FILE_PATH:-}"; [[ -z "$FILE" ]] && exit 0; ec
 ```
 
 Adapt: Change the file matcher and sync command for your project's derived files.
+
+---
+
+## Stop — auto-backup global config to un-di (global, not project)
+
+**What it does:** At the end of every session, diffs `~/.claude/settings.json` and `~/.claude/CLAUDE.md` against the snapshots in `un-di/templates/global-*`. If either drifted, copies the live file over the snapshot, commits, and pushes — no manual step.
+
+**Why:** `~/.claude/settings.json` and `~/.claude/CLAUDE.md` aren't version-controlled by Claude Code itself. Without this, a wipe/reinstall silently loses every bit of global tuning (minimal MCP, permissions, personal preferences). This hook makes the backup self-maintaining instead of relying on remembering to re-copy files after every tweak.
+
+Lives in `~/.claude/settings.json` (global, not any project's `.claude/settings.json`):
+```json
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /home/nooo/un-di/templates/sync-global-config.sh",
+            "async": true,
+            "statusMessage": "Syncing global config backup..."
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+Script: `templates/sync-global-config.sh` — `cmp` both files, copy+`git commit`+`git push` only if something actually changed (no-op, no commit noise, on sessions where nothing changed).
+
+**Tradeoff, explicitly accepted:** this pushes to GitHub unattended on every session where the global config changed, with no per-run confirmation. That's normally something to pause on (push = visible to others / hard to silently reverse), but here the target is the user's own backup repo and the whole point is "don't make me remember to do this" — so it was deliberately approved as the exception. If you ever want to dial it back: copy-and-commit-only (drop `git push`, run it yourself via a command) or copy-only (drop git entirely) are the two safer variants.
+
+**Path is hardcoded** to `/home/nooo/un-di` — this hook is machine-specific, not something to copy into a new project's `.claude/settings.json`.
