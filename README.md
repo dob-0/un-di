@@ -19,6 +19,9 @@ docs/
     stack.md        — Claude Code five-layer architecture reference
     hooks.md        — hook patterns with explanations, proven in di.iiii
     new-project.md  — checklist for setting up a new project from scratch
+  antigravity/
+    stack.md        — Antigravity stack and orchestration reference
+    new-project.md  — checklist for setting up a new project under Antigravity
   ai-research/
     ai-workflow-2026.md  — research on AI workflows, context engineering, tools
 

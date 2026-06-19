@@ -4,6 +4,8 @@ Items from NOTES.md that have been turned into real Claude config changes.
 
 ---
 
+- **Antigravity Documentation (2026-06-19)** — Added Antigravity/Gemini specific documentation under `docs/antigravity/` (stack.md and new-project.md) to serve as a guide for Antigravity, paralleling the existing Claude documentation.
+
 - **Permission prompt behavior** — set `defaultMode: auto` globally (was only in di.iiii); added explicit "when to pause" rules to global CLAUDE.md: proceed on safe ops, pause on destructive/visible/ambiguous tasks, one-sentence confirm only.
 
 - **Credit burn audit (2026-06-19)** — went looking for where Claude sessions were wasting tokens/credits. Found and fixed:

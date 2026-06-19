@@ -65,6 +65,7 @@ Read `docs/claude/new-project.md`. Templates live in `templates/`.
 docs/
   context/        me.md, di-iiii.md, tools.md, network.md, projects.md
   claude/         stack.md, hooks.md, new-project.md
+  antigravity/    stack.md, new-project.md
   ai-research/    ai-workflow-2026.md, models.md
 
 templates/
