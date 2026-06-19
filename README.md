@@ -25,6 +25,9 @@ docs/
 templates/
   project-settings.json   — base .claude/settings.json for any new project
   mcp.json                — base .mcp.json, project-scoped MCP servers (never global)
+  global-settings.json    — live backup of ~/.claude/settings.json
+  global-CLAUDE.md        — live backup of ~/.claude/CLAUDE.md
+  restore-global-config.sh — copies the two above back into ~/.claude after a wipe/reinstall
   commands/
     ship.md         — commit and push
     branch.md       — create feature branch
@@ -48,6 +51,17 @@ DONE.md     — completed config changes
 4. Copy relevant agents from `templates/agents/` → `.claude/agents/` (adapt as needed)
 5. Write a `CURRENT.md` at repo root — this is the highest-leverage AI tool
 6. Write an `AGENTS.md` or `CLAUDE.md` with routing rules and non-negotiables
+
+## After a wipe / fresh machine
+
+`~/.claude/settings.json` and `~/.claude/CLAUDE.md` are NOT version-controlled by Claude Code itself — a fresh install starts from defaults. To restore:
+
+```bash
+git clone git@github.com:dob-0/un-di.git
+bash un-di/templates/restore-global-config.sh
+```
+
+**Keep `templates/global-settings.json` and `templates/global-CLAUDE.md` in sync** whenever you change the real `~/.claude/` files — they're a snapshot, not a live link. Per-project config (di.iiii, etc.) doesn't need this: it's already committed in those repos.
 
 ## Working in this repo
 
