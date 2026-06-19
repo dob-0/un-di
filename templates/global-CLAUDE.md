@@ -35,7 +35,22 @@ Do not ask permission mid-task for things already implied by the original reques
 
 When Ollama is running, use it for analysis/docs/planning before escalating to Claude API:
 ```bash
-bash scripts/ollama-task.sh fast  "..."   # dob-fast  — quick Q&A
-bash scripts/ollama-task.sh deep  "..."   # dob-deep  — architecture
-bash scripts/ollama-task.sh coder "..."   # qwen3-coder:30b — logic/tests
+bash scripts/ollama-task.sh fast    "..."   # dob-fast (qwen3:8b)      — quick Q&A
+bash scripts/ollama-task.sh deep    "..."   # dob-deep (qwen3:8b)      — architecture
+bash scripts/ollama-task.sh coder   "..."   # qwen2.5-coder:7b         — logic/tests
+bash scripts/ollama-task.sh general "..."   # qwen2.5:7b               — mixed reasoning
+bash scripts/ollama-task.sh tiny    "..."   # qwen2.5-coder:1.5b       — symbol search
 ```
+
+## Running Claude Code itself on a local model
+
+`ollama launch claude --model dob-fast` (or any pulled tag) repoints the `claude` CLI at a
+local Ollama model instead of the real API for that session; `ollama launch claude --restore`
+reverts. Local 7-8B models cannot reliably judge ambiguity inside an agentic harness — given a
+vague prompt they will hallucinate a plausible-looking tool call (e.g. invent a fake file path
+and write to it) instead of asking what's wanted. This rule mitigates it for any model running
+under `claude` (real or local), but only give local-model sessions fully explicit, narrow,
+already-scoped tasks — never vague prompts — and prefer throwaway directories.
+
+**If the user's message is a single word, a greeting, or otherwise lacks a concrete, specific
+task, do not call any tool. Ask exactly one clarifying question instead.**
