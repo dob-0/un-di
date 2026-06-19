@@ -43,17 +43,24 @@ Built-in types: `Explore` (read-only fast), `Plan` (architect), `claude` (genera
 **Use for:** security audits, parallel research, preventing context bloat.
 
 ## 5. MCP Servers
-External tool connectors via Model Context Protocol. Heavy — a 5-server setup can cost 50k+ tokens upfront.
+External tool connectors via Model Context Protocol. Heavy — every configured server injects its tool schema into every turn, even when unused. There is no live "load mid-task when needed" mode — servers are fixed for the whole session at startup. The real lever is **scope**: keep global minimal, put servers only where they're actually used.
 
-Configure in `settings.json` under `mcpServers`. Currently configured globally:
-- `github` — PRs, issues, repos (HTTP via api.githubcopilot.com, token in settings.local.json)
-- `context7` — up-to-date library docs (Three.js, React, etc.)
-- `playwright` — browser automation
+`mcpServers` is **not** a valid `settings.json` field. Configure it in a project-root `.mcp.json`:
+```json
+{
+  "mcpServers": {
+    "context7": { "command": "npx", "args": ["-y", "@upstash/context7-mcp"] }
+  }
+}
+```
+Then approve it in that project's `.claude/settings.json` so it loads without a prompt:
+```json
+{ "enabledMcpjsonServers": ["context7"] }
+```
 
-In di.iiii project settings:
-- `sqlite` — direct DB queries on di.db
+`~/.claude/settings.json` (global) should normally have **no MCP servers** — anything global loads in every session of every project, including ones that never touch it. di.iiii has `context7` (library docs) and `playwright` (browser verification) scoped this way in `di.iiii/.mcp.json` — confirmed actually used there (UI verification, auth review), not just installed by default.
 
-**Rule:** few MCPs, many Commands. Pin one MCP per external system, write thin Commands that orchestrate them.
+**Rule:** few MCPs, many Commands, and project-scoped by default. Pin one MCP per external system, write thin Commands that orchestrate them. Global MCP is the exception, not the starting point.
 
 ## Architecture principle
 
@@ -72,5 +79,8 @@ MCP          → connect external systems
 | CLAUDE.md | `~/.claude/CLAUDE.md` | `AGENTS.md` (canonical) |
 | Commands | none | `/ship`, `/branch`, `/stack`, `/live` |
 | Hooks | none | SessionStart, Stop, PreToolUse, PostToolUse |
-| MCP | github, context7, playwright | + sqlite |
+| Plugins | none | `frontend-design`, `security-guidance` |
+| MCP | none (minimal by default) | `context7`, `playwright` via `.mcp.json` |
 | defaultMode | auto | auto |
+
+Updated 2026-06-19: global MCP (`context7`, `playwright`) and the GitHub MCP were removed from `~/.claude/settings.json`. di.iiii had unused `sqlite`/`serena` MCP servers dropped earlier (`chore: drop unused sqlite/serena MCP servers from settings`) and the still-used `context7`/`playwright` moved from global into `di.iiii/.mcp.json`, scoped to that project only.

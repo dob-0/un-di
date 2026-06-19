@@ -24,6 +24,7 @@ docs/
 
 templates/
   project-settings.json   — base .claude/settings.json for any new project
+  mcp.json                — base .mcp.json, project-scoped MCP servers (never global)
   commands/
     ship.md         — commit and push
     branch.md       — create feature branch

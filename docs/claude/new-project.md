@@ -58,26 +58,28 @@ Write a short routing guide:
 
 Keep it under 80 lines. The role cards / agent files hold the detail.
 
-## 6. MCP
+## 6. MCP — project-scoped, not global
 
-Add only what you actively use:
-- `context7` — always useful for library docs
-- `sqlite` — if you have a local SQLite DB
-- `github` — if you need PR/issue access from within Claude
-- `playwright` — if you do UI testing
+Add only what this project actively uses, in a project-root `.mcp.json` (not `settings.json` — `mcpServers` isn't a valid field there):
+```json
+{ "mcpServers": { "context7": { "command": "npx", "args": ["-y", "@upstash/context7-mcp"] } } }
+```
+Approve it in `.claude/settings.json` so it doesn't prompt every session:
+```json
+{ "enabledMcpjsonServers": ["context7"] }
+```
 
-Token cost: each MCP server loads on every session. Keep it minimal.
+Common candidates, add only if actually used in this project:
+- `context7` — library docs
+- `playwright` — UI/browser testing
+- `github` — PR/issue access from within Claude (needs a token)
+- a DB-specific MCP (e.g. `sqlite`) — only if you query the DB through Claude regularly, not "just in case"
+
+Token cost: every configured server loads on every session of every project it's declared in — there's no on-demand loading. Keep it minimal and project-scoped.
 
 ## 7. Global settings
 
-These are already set globally (in `~/.claude/`):
-- `defaultMode: auto`
-- GitHub MCP (with real token)
-- Context7 MCP
-- Playwright MCP
-- Cleaned-up global permission list
-
-You only need project-level settings for project-specific things.
+`~/.claude/settings.json` should stay minimal — `defaultMode: auto` and a cleaned-up global permission list. **No MCP servers globally** unless something is genuinely needed in every project you ever open; otherwise it's constant overhead for sessions that never use it. Project-level `.mcp.json` is where MCP belongs by default.
 
 ## Order of operations for a new session (Boris Cherny pattern)
 
