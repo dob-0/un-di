@@ -1,6 +1,4 @@
 {
-  "theme": "dark",
-  "defaultMode": "auto",
   "hooks": {
     "Stop": [
       {
@@ -8,11 +6,13 @@
           {
             "type": "command",
             "command": "bash /home/nooo/un-di/templates/sync-global-config.sh",
-            "async": true,
-            "statusMessage": "Syncing global config backup..."
+            "statusMessage": "Syncing global config backup...",
+            "async": true
           }
         ]
       }
     ]
-  }
+  },
+  "theme": "dark",
+  "defaultMode": "auto"
 }
