@@ -30,6 +30,7 @@ Do not ask permission mid-task for things already implied by the original reques
 - serverXR/auth/db → Backend/API Engineer
 - shared schema/op-log → Schema/Protocol Engineer
 - nodeRegistry/graph → Node System Engineer
+- XR experience/spatial UX/exhibition design → XR Creator (`docs/ai/roles/xr-creator.md`)
 
 ## Local delegation (free, no API cost)
 
