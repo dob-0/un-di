@@ -14,5 +14,6 @@
     ]
   },
   "theme": "dark",
-  "defaultMode": "auto"
+  "defaultMode": "auto",
+  "remoteControlAtStartup": true
 }
