@@ -15,6 +15,5 @@
   },
   "theme": "dark",
   "remoteControlAtStartup": true,
-  "defaultMode": "auto",
-  "model": "opus"
+  "defaultMode": "auto"
 }
