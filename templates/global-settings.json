@@ -15,5 +15,9 @@
     ]
   },
   "theme": "dark-ansi",
-  "defaultMode": "auto"
+  "defaultMode": "auto",
+  "statusLine": {
+    "type": "command",
+    "command": "bash /home/nooo/.claude/statusline.sh"
+  }
 }
