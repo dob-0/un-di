@@ -1,5 +1,5 @@
 {
-  "model": "opus",
+  "model": "haiku",
   "hooks": {
     "Stop": [
       {
