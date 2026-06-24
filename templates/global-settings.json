@@ -1,5 +1,5 @@
 {
-  "model": "haiku",
+  "model": "opus",
   "hooks": {
     "Stop": [
       {
@@ -18,7 +18,7 @@
     "type": "command",
     "command": "bash /home/nooo/.claude/statusline.sh"
   },
+  "totalTokensReminder": "countdown",
   "theme": "dark-ansi",
-  "defaultMode": "auto",
-  "totalTokensReminder": "countdown"
+  "defaultMode": "auto"
 }
