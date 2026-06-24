@@ -1,5 +1,5 @@
 {
-  "model": "opus",
+  "model": "haiku",
   "hooks": {
     "Stop": [
       {
@@ -14,10 +14,10 @@
       }
     ]
   },
-  "theme": "dark-ansi",
-  "defaultMode": "auto",
   "statusLine": {
     "type": "command",
     "command": "bash /home/nooo/.claude/statusline.sh"
-  }
+  },
+  "theme": "dark-ansi",
+  "defaultMode": "auto"
 }
