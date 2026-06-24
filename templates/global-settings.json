@@ -19,5 +19,6 @@
     "command": "bash /home/nooo/.claude/statusline.sh"
   },
   "theme": "dark-ansi",
-  "defaultMode": "auto"
+  "defaultMode": "auto",
+  "totalTokensReminder": "countdown"
 }
