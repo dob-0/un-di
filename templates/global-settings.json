@@ -19,5 +19,6 @@
   },
   "totalTokensReminder": "countdown",
   "theme": "dark-ansi",
-  "defaultMode": "auto"
+  "defaultMode": "auto",
+  "model": "opus"
 }
