@@ -19,7 +19,7 @@ Do not ask permission mid-task for things already implied by the original reques
 
 `/home/nooo/di.iiii` — XR authoring platform (di-studio.xyz).
 - Repo: `dob-0/di.iiii` on GitHub
-- Branch flow: `dev → staging → main`
+- Branch flow: `dev → main` (source). Deploy via publish-cpanel-prebuilt-v2.yml: push `dev`→`cpanel-staging`, push `main`→`cpanel-production` (machine-built artifact branches — never merge/force-push them)
 - Backend runs on port 4000, frontend on 5173, full Docker stack on 8080
 - High-trust project: full dev workflow is pre-approved in project settings
 
