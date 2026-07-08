@@ -1,5 +1,4 @@
 {
-  "model": "claude-fable-5[1m]",
   "hooks": {
     "Stop": [
       {
@@ -20,5 +19,6 @@
   },
   "totalTokensReminder": "countdown",
   "theme": "dark-ansi",
-  "defaultMode": "auto"
+  "defaultMode": "auto",
+  "model": "claude-fable-5[1m]"
 }
