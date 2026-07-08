@@ -1,5 +1,5 @@
 {
-  "model": "sonnet",
+  "model": "claude-fable-5[1m]",
   "hooks": {
     "Stop": [
       {
@@ -20,5 +20,6 @@
   },
   "totalTokensReminder": "countdown",
   "theme": "dark-ansi",
+  "agentPushNotifEnabled": false,
   "defaultMode": "auto"
 }
