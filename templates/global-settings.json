@@ -1,5 +1,4 @@
 {
-  "model": "claude-fable-5[1m]",
   "hooks": {
     "Stop": [
       {
@@ -18,6 +17,7 @@
     "type": "command",
     "command": "bash /home/nooo/.claude/statusline.sh"
   },
+  "effortLevel": "high",
   "totalTokensReminder": "countdown",
   "theme": "light",
   "agentPushNotifEnabled": false,
