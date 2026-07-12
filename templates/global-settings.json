@@ -21,7 +21,7 @@
   "effortLevel": "high",
   "totalTokensReminder": "countdown",
   "skipWorkflowUsageWarning": true,
-  "theme": "light",
+  "theme": "auto",
   "agentPushNotifEnabled": false,
   "defaultMode": "auto"
 }
