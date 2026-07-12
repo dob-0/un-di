@@ -20,8 +20,8 @@
   },
   "effortLevel": "high",
   "totalTokensReminder": "countdown",
+  "skipWorkflowUsageWarning": true,
   "theme": "light",
   "agentPushNotifEnabled": false,
-  "defaultMode": "auto",
-  "skipWorkflowUsageWarning": true
+  "defaultMode": "auto"
 }
