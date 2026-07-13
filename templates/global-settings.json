@@ -18,13 +18,13 @@
     "type": "command",
     "command": "bash /home/nooo/.claude/statusline.sh"
   },
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true
+  },
   "effortLevel": "high",
   "totalTokensReminder": "countdown",
   "skipWorkflowUsageWarning": true,
   "theme": "auto",
   "agentPushNotifEnabled": false,
-  "defaultMode": "auto",
-  "enabledPlugins": {
-    "frontend-design@claude-plugins-official": true
-  }
+  "defaultMode": "auto"
 }
