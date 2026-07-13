@@ -23,5 +23,8 @@
   "skipWorkflowUsageWarning": true,
   "theme": "auto",
   "agentPushNotifEnabled": false,
-  "defaultMode": "auto"
+  "defaultMode": "auto",
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true
+  }
 }
