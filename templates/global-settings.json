@@ -15,6 +15,11 @@
             "command": "bash /home/nooo/un-di/templates/sync-global-config.sh",
             "statusMessage": "Syncing global config backup...",
             "async": true
+          },
+          {
+            "type": "command",
+            "command": "bash /home/nooo/un-di/templates/hooks/memory-sync-check.sh",
+            "statusMessage": "Checking memory sync..."
           }
         ]
       }
