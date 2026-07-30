@@ -1,4 +1,10 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(ssh root@10.0.0.1:*)"
+    ],
+    "defaultMode": "auto"
+  },
   "hooks": {
     "Stop": [
       {
@@ -17,12 +23,6 @@
     "type": "command",
     "command": "bash /home/nooo/.claude/statusline.sh"
   },
-  "permissions": {
-    "allow": [
-      "Bash(ssh root@10.0.0.1:*)"
-    ],
-    "defaultMode": "auto"
-  },
   "enabledPlugins": {
     "frontend-design@claude-plugins-official": true
   },
@@ -31,5 +31,6 @@
   "skipWorkflowUsageWarning": true,
   "theme": "auto",
   "agentPushNotifEnabled": false,
-  "defaultMode": "auto"
+  "defaultMode": "auto",
+  "model": "claude-fable-5[1m]"
 }
