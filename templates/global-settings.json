@@ -20,7 +20,8 @@
   "permissions": {
     "allow": [
       "Bash(ssh root@10.0.0.1:*)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "enabledPlugins": {
     "frontend-design@claude-plugins-official": true
