@@ -22,6 +22,20 @@ component — say plainly that I can't see it, and ask for a screenshot before g
 rest. Never scale an unlooked-at thing to N copies, and never let a report read as delivered
 when the visual check is missing.
 
+## Run parallel agents when the work is wide
+
+Don't wait to be asked. When a task has several independent strands — a design pass, an
+audit, a survey across files, competing approaches worth comparing — launch parallel agents
+in one message and synthesise their returns yourself. Standing permission; no need to check
+in first.
+
+Judgement, not reflex: one file, one obvious edit, one lookup → just do it. Delegating a task
+smaller than the briefing costs more than it saves.
+
+Agents propose; I still verify. Their output is a draft to be checked against the real thing,
+never something to report as done on their word — the SEEN rule above applies to their work
+exactly as it applies to mine.
+
 ## Primary project
 
 `/home/nooo/di.iiii` — XR authoring platform (di-studio.xyz).
