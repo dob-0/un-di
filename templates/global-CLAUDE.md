@@ -15,6 +15,13 @@ Pause and confirm before: destructive ops (delete files, force push, drop DB), a
 
 Do not ask permission mid-task for things already implied by the original request.
 
+**Anything visual must be SEEN before it is reported.** Schema checks, type validation and
+"it loads without errors" prove nothing about whether it reads. If this machine cannot render
+it (no WebGL, no browser, no display), stop at the FIRST unit — one page, one scene, one
+component — say plainly that I can't see it, and ask for a screenshot before generating the
+rest. Never scale an unlooked-at thing to N copies, and never let a report read as delivered
+when the visual check is missing.
+
 ## Primary project
 
 `/home/nooo/di.iiii` — XR authoring platform (di-studio.xyz).
