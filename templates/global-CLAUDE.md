@@ -66,26 +66,14 @@ exactly as it applies to mine.
 - nodeRegistry/graph → Node System Engineer
 - XR experience/spatial UX/exhibition design → XR Creator (`docs/ai/roles/xr-creator.md`)
 
-## Local delegation (free, no API cost)
+## No local models
 
-When Ollama is running, use it for analysis/docs/planning before escalating to Claude API:
-```bash
-bash scripts/ollama-task.sh fast    "..."   # dob-fast (qwen3:8b)      — quick Q&A
-bash scripts/ollama-task.sh deep    "..."   # dob-deep (qwen3:8b)      — architecture
-bash scripts/ollama-task.sh coder   "..."   # qwen2.5-coder:7b         — logic/tests
-bash scripts/ollama-task.sh general "..."   # qwen2.5:7b               — mixed reasoning
-bash scripts/ollama-task.sh tiny    "..."   # qwen2.5-coder:1.5b       — symbol search
-```
-
-## Running Claude Code itself on a local model
-
-`ollama launch claude --model dob-fast` (or any pulled tag) repoints the `claude` CLI at a
-local Ollama model instead of the real API for that session; `ollama launch claude --restore`
-reverts. Local 7-8B models cannot reliably judge ambiguity inside an agentic harness — given a
-vague prompt they will hallucinate a plausible-looking tool call (e.g. invent a fake file path
-and write to it) instead of asking what's wanted. This rule mitigates it for any model running
-under `claude` (real or local), but only give local-model sessions fully explicit, narrow,
-already-scoped tasks — never vague prompts — and prefer throwaway directories.
+Removed 2026-08-05, both machines. This desktop goes offline, which made a
+local-only fallback the least available thing in the stack rather than the most; the
+Mac's copy existed only for the rite's keeper, and that was tested and rejected.
+`scripts/ollama-task.sh` and `ollama launch claude` no longer have anything behind them
+— don't reach for either. If a local model is ever wanted again it is a fresh decision,
+not a restore.
 
 **If the user's message is a single word, a greeting, or otherwise lacks a concrete, specific
 task, do not call any tool. Ask exactly one clarifying question instead.**
