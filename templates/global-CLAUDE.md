@@ -22,6 +22,19 @@ component — say plainly that I can't see it, and ask for a screenshot before g
 rest. Never scale an unlooked-at thing to N copies, and never let a report read as delivered
 when the visual check is missing.
 
+## Verify on the surface I'm actually looking at
+
+Before saying "go look", establish WHERE I look and confirm the work is reachable from there.
+Name the tree, the branch and the port/URL in the same breath as the invitation. `di.iiii` has
+several worktrees and agents move the main checkout between branches without warning, so
+"it's on dev" is not the same as "it's on your screen".
+
+If the work lives somewhere I'm not pointed at, say so and hand over the exact URL — start a
+second dev server on a spare port rather than switching branches under a tree someone else
+is mid-edit in.
+
+A screenshot from a build I made proves the code renders. It does not prove I can reach it.
+
 ## Run parallel agents when the work is wide
 
 Don't wait to be asked. When a task has several independent strands — a design pass, an
