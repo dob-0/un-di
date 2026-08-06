@@ -16,8 +16,10 @@
     ],
     "defaultMode": "auto"
   },
-  "model": "opusplan",
-  "fallbackModel": ["sonnet"],
+  "model": "claude-fable-5[1m]",
+  "fallbackModel": [
+    "sonnet"
+  ],
   "hooks": {
     "Stop": [
       {
