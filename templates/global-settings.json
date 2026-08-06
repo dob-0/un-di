@@ -1,7 +1,18 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ssh root@10.0.0.1:*)"
+      "Bash(ssh root@10.0.0.1:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run test)",
+      "Bash(npm run test:server-contracts)",
+      "Bash(npm run docs:ai:check)",
+      "Bash(npm run docs:wiki:check)",
+      "Bash(curl -s http://localhost:*)",
+      "Bash(curl -s https://di-studio.xyz*)",
+      "Bash(curl -s https://staging.di-studio.xyz*)",
+      "mcp__claude-in-chrome__read_console_messages",
+      "mcp__claude-in-chrome__tabs_context_mcp",
+      "mcp__claude-in-chrome__get_page_text"
     ],
     "defaultMode": "auto"
   },
