@@ -16,7 +16,7 @@
     ],
     "defaultMode": "auto"
   },
-  "model": "default",
+  "model": "claude-fable-5[1m]",
   "fallbackModel": [
     "sonnet"
   ],
