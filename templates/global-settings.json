@@ -16,9 +16,8 @@
     ],
     "defaultMode": "auto"
   },
-  "fallbackModel": [
-    "sonnet"
-  ],
+  "model": "default",
+  "fallbackModel": ["sonnet"],
   "hooks": {
     "Stop": [
       {
