@@ -54,5 +54,6 @@
   "skipWorkflowUsageWarning": true,
   "theme": "dark-daltonized",
   "agentPushNotifEnabled": false,
-  "defaultMode": "auto"
+  "defaultMode": "auto",
+  "model": "claude-fable-5[1m]"
 }
