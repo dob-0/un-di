@@ -54,5 +54,33 @@
   "skipWorkflowUsageWarning": true,
   "theme": "dark-daltonized",
   "agentPushNotifEnabled": false,
-  "defaultMode": "auto"
+  "defaultMode": "auto",
+  "autoMode": {
+    "environment": [
+      "### Org-wide",
+      "**Organization**: None configured",
+      "**Cloud provider(s)**: None configured",
+      "**Repository visibility**: Not queryable here — origin remote is unset in this repo (no remotes configured); infer visibility per-repo before assuming private or public",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: None configured",
+      "**Default / protected branches**: Not queryable here — no origin remote in this repo to resolve owner/repo against gh",
+      "**CI/CD deploy targets**: None configured",
+      "**Network posture**: None configured",
+      "**Source control**: The trusted repo and its remote(s) only (no additional orgs configured) — this checkout currently has no remotes configured",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: None configured",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: any file or store holding personal data, confidential business data, credentials, regulated data, or similarly sensitive material; preserve exact handles when known and share only with audiences cleared at the [named+specifics] bar — note this home directory contains many sensitive-looking paths (di-backups/secrets/*.age, .claude/.credentials.json, di-backups/field/*prod*.json, various serverXR/.env and .env.local files across sibling di.iiii checkouts) that fall outside this project (/home/dob) and should not be read into it",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment (hyphen/underscore/dot-delimited — e.g. matches `prod-db`, not `producer`) — note di-studio.xyz and staging.di-studio.xyz were the two most-contacted project hosts, but neither is this (empty) repo's own remote",
+      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
+      "### User-specific",
+      "**Primary use of Claude Code**: software development",
+      "**Trusted repo**: The git repository the agent started in (/home/dob) and its configured remote(s) — this repo currently has zero tracked files and no remotes configured, so there is no established remote or visibility to scope commits/pushes against; treat as an effectively empty/uninitialized checkout until a remote is added",
+      "**Org-specific CLIs**: None configured",
+      "(no \"routine under <user>/ prefix\" qualifiers found)"
+    ]
+  }
 }
