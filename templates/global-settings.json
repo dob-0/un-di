@@ -87,6 +87,5 @@
       "(no \"routine under <user>/ prefix\" qualifiers found)"
     ]
   },
-  "defaultMode": "auto",
-  "model": "claude-fable-5[1m]"
+  "defaultMode": "auto"
 }
