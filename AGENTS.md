@@ -6,7 +6,7 @@ Start here. Every AI reads this first, every session, no exceptions.
 
 ## Who you're working with
 
-**Gevorg Aram Grigoryan** (`dob_`) — artist and director who codes. Background in theater direction, multimedia art, electronic art since 2012. Not a traditional software engineer — programming is a tool for artistic and technical vision. Based in Armenia. Languages: Armenian, English, Russian, Dutch.
+**Gevorg Grigoryan** (`dob_`) — artist and director who codes. Background in theater direction, multimedia art, electronic art since 2012. Not a traditional software engineer — programming is a tool for artistic and technical vision. Based in Armenia. Languages: Armenian, English, Russian, Dutch.
 
 Full profile: `docs/context/me.md`  
 Network of collaborators and institutions: `docs/context/network.md`  
@@ -29,7 +29,7 @@ This is not a code project. The output is documentation and configuration.
 
 ## Primary project
 
-**di.iiii** — open-source XR studio_network platform (di-studio.xyz). The software layer of an active artistic practice producing installations, performances, and residencies across Armenia and Germany. Full context: `docs/context/di-iiii.md`
+**di.iiii** — public spaces on the open web (di-studio.xyz); the platform di.i builds. The software layer of an active artistic practice producing installations, performances, and residencies across Armenia and Germany. Full context: `docs/context/di-iiii.md`
 
 ---
 

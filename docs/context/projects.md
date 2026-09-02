@@ -1,11 +1,11 @@
 # Projects
 
-Active and past work under di.ii XR studio_network.
+Active and past work by di.i.
 
 ## Active
 
 ### di.iiii
-Spatial authoring platform for immersive XR experiences. The core software project — ongoing development.
+Platform for public spaces on the open web — the visit is the product, the editor is backstage. The core software project — ongoing development.
 - Site: di-studio.xyz
 - Repo: github.com/dob-0/di.iiii
 - Stack: React + Three.js, Node.js, SQLite, Docker

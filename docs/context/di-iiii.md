@@ -15,7 +15,7 @@ Two editor surfaces:
 
 ## Why it exists
 
-di.iiii is the software infrastructure behind an active artistic practice (di.ii XR studio_network). It is not a startup product — it is a platform built by and for artists making real exhibitions, performances, and residencies across Armenia and Germany.
+di.iiii is the software infrastructure behind an active artistic practice (di.i). It is not a startup product — it is a platform built by and for artists making real exhibitions, performances, and residencies across Armenia and Germany.
 
 The work it enables: immersive installations, body-tracking environments, live A/V performance, AI-driven experiences, metaverse spaces, XR education programs. Real venues, real audiences, real institutions.
 

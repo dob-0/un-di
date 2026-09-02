@@ -4,7 +4,7 @@ This doc is for any AI working with me. Read it before asking basic questions ab
 
 ## Identity
 
-- **Name:** Gevorg Aram Grigoryan (`dob_`)
+- **Name:** Gevorg Grigoryan (`dob_`)
 - **GitHub:** `dob-0`
 - **Email:** `info@thedi.studio`
 - **Based in:** Republic of Armenia
@@ -19,12 +19,12 @@ Formal education: Master of Arts in Theater Art, Yerevan State Institute of Thea
 
 ## Primary project
 
-**di.iiii** — XR studio network platform at di-studio.xyz.  
+**di.iiii** — public spaces on the open web, at di-studio.xyz.  
 Repo: `dob-0/di.iiii` on GitHub. Running since 2022.
 
-**What it is:** An open-source XR studio_network that connects physical and virtual environments through creative collaborations, supporting live processes across XR platforms and physical infrastructure. It is the software infrastructure behind a practice that produces real-world installations, performances, and events.
+**What it is:** An open-source platform for public spaces on the open web — make a space, hand out the address; a link while it runs, a file when it ends, supporting live processes across XR platforms and physical infrastructure. It is the software infrastructure behind a practice that produces real-world installations, performances, and events.
 
-**The practice behind it:** di.ii has produced work across Armenia (Yerevan, Gyumri) and Germany (Munich) since 2020. The recurring themes are:
+**The practice behind it:** di.i has produced work across Armenia (Yerevan, Gyumri) and Germany (Munich) since 2020. The recurring themes are:
 - Physical-digital hybridity — installations where projections respond to physical space and bodies
 - Body/human tracking — depth sensors, computer vision, motion tracking as artistic material
 - Cultural memory and identity — Armenian communal life, borders, language, collective reflection

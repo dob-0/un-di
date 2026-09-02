@@ -1,6 +1,6 @@
 # un-di
 
-AI workspace for Gevorg Aram Grigoryan (`dob_`).  
+AI workspace for Gevorg Grigoryan (`dob_`).  
 https://github.com/dob-0/un-di
 
 Three purposes:
