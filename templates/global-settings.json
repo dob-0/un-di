@@ -20,6 +20,7 @@
       "/home/nooo"
     ]
   },
+  "model": "claude-fable-5-1[1m]",
   "fallbackModel": [
     "sonnet"
   ],
@@ -87,6 +88,5 @@
       "(no \"routine under <user>/ prefix\" qualifiers found)"
     ]
   },
-  "defaultMode": "auto",
-  "model": "claude-fable-5-1[1m]"
+  "defaultMode": "auto"
 }
