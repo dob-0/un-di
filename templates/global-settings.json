@@ -20,7 +20,7 @@
       "/home/nooo"
     ]
   },
-  "model": "opus[1m]",
+  "model": "claude-fable-5-1[1m]",
   "fallbackModel": [
     "sonnet"
   ],
@@ -59,6 +59,7 @@
       "effortLevel": "medium"
     }
   },
+  "fastMode": true,
   "totalTokensReminder": "countdown",
   "skipWorkflowUsageWarning": true,
   "theme": "dark-daltonized",
@@ -91,6 +92,5 @@
       "(no \"routine under <user>/ prefix\" qualifiers found)"
     ]
   },
-  "defaultMode": "auto",
-  "fastMode": true
+  "defaultMode": "auto"
 }
