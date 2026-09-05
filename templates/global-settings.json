@@ -91,5 +91,6 @@
       "(no \"routine under <user>/ prefix\" qualifiers found)"
     ]
   },
-  "defaultMode": "auto"
+  "defaultMode": "auto",
+  "fastMode": true
 }
