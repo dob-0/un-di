@@ -20,7 +20,7 @@
       "/home/nooo"
     ]
   },
-  "model": "claude-fable-5-1[1m]",
+  "model": "opus[1m]",
   "fallbackModel": [
     "sonnet"
   ],
@@ -57,6 +57,9 @@
     },
     "claude-opus-5": {
       "effortLevel": "medium"
+    },
+    "claude-fable-5-1": {
+      "effortLevel": "high"
     }
   },
   "fastMode": true,
