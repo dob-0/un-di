@@ -38,9 +38,9 @@ Every decision should step toward this direction, not away from it.
 - Backend: Node.js (`serverXR`), SQLite (node-sqlite3-wasm) — port 4000
 - Full stack: Docker Compose — port 8080
 - Auth: session cookies, role-based, OAuth (GitHub/Google)
-- Staging: staging.di-studio.xyz (`dev` branch)
+- Dev: dev.diiii.xyz (`dev` branch)
 - Production: di-studio.xyz (`main` branch)
-- Branch flow: `dev → staging → main`
+- Branch flow: `dev → main`
 - Deploy: GitHub Actions (`publish-cpanel-prebuilt-v2.yml`)
 
 ## Code structure

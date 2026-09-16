@@ -9,7 +9,7 @@
       "Bash(npm run docs:wiki:check)",
       "Bash(curl -s http://localhost:*)",
       "Bash(curl -s https://di-studio.xyz*)",
-      "Bash(curl -s https://staging.di-studio.xyz*)",
+      "Bash(curl -s https://dev.diiii.xyz*)",
       "mcp__claude-in-chrome__read_console_messages",
       "mcp__claude-in-chrome__tabs_context_mcp",
       "mcp__claude-in-chrome__get_page_text"
@@ -84,7 +84,7 @@
       "**Internal package registry**: None configured",
       "**Sensitive data locations & audiences**: any file or store holding personal data, confidential business data, credentials, regulated data, or similarly sensitive material; preserve exact handles when known and share only with audiences cleared at the [named+specifics] bar — note this home directory contains many sensitive-looking paths (di-backups/secrets/*.age, .claude/.credentials.json, di-backups/field/*prod*.json, various serverXR/.env and .env.local files across sibling di.iiii checkouts) that fall outside this project (/home/dob) and should not be read into it",
       "**Data retention / declassification**: None configured",
-      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment (hyphen/underscore/dot-delimited — e.g. matches `prod-db`, not `producer`) — note di-studio.xyz and staging.di-studio.xyz were the two most-contacted project hosts, but neither is this (empty) repo's own remote",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment (hyphen/underscore/dot-delimited — e.g. matches `prod-db`, not `producer`) — note di-studio.xyz and dev.diiii.xyz were the two most-contacted project hosts, but neither is this (empty) repo's own remote",
       "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
       "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
       "### User-specific",
